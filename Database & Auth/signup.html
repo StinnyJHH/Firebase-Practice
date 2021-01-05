@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Firebase Sign Up</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web Sign Up</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="signup()">Sign up</button>
+    <button onclick="location.href='home.html'">Go Back</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD3wqitgCrN-pRpzW9WqrlhiN64Qmj8xz8",
+      authDomain: "test-e52a9.firebaseapp.com",
+      databaseURL: "https://test-e52a9-default-rtdb.firebaseio.com",
+      projectId: "test-e52a9",
+      storageBucket: "test-e52a9.appspot.com",
+      messagingSenderId: "355799529359",
+      appId: "1:355799529359:web:16915a2a9cd61071bebdfa",
+      measurementId: "G-XWM5LVFFJV"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="credentials.js"></script>
+
+</body>
+</html>
